@@ -1,6 +1,6 @@
 h1. Simple Hello World
 
-An example "Hello World" application using the "Simple":http://simpleframework.org application server.
+An example "Hello World" application using the "Simple":http://www.simpleframework.org application server.
 
 h2. Prerequisites
 
