@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is basically a direct copy of https://raw.github.com/marekjelen/jruby-maven/master/pom.xml -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.sam</groupId>
+  <artifactId>simple-hello-world</artifactId>
+  <version>1.0</version>
+  <name><![CDATA[simple-hello-world - gem]]></name>
+  <packaging>jar</packaging>
+  <dependencies>
+    <dependency>
+    	<groupId>org.simpleframework</groupId>
+    	<artifactId>simple</artifactId>
+    	<version>4.1.21</version>
+    </dependency>
+  </dependencies>
+</project>
