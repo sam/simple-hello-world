@@ -1,3 +1,5 @@
+package org.sam;
+
 import org.simpleframework.http.core.Container;
 import org.simpleframework.transport.connect.Connection;
 import org.simpleframework.transport.connect.SocketConnection;
@@ -9,7 +11,8 @@ import java.io.PrintStream;
 
 public class HelloWorld implements Container {
 
-   public void handle(Request request, Response response) {
+  public void handle(Request request, Response response) {
+    try {
       PrintStream body = response.getPrintStream();
       long time = System.currentTimeMillis();
 
@@ -20,13 +23,14 @@ public class HelloWorld implements Container {
 
       body.println("Hello World");
       body.close();
-   } 
+    } catch(java.io.IOException e) {}
+  } 
 
-   public static void main(String[] list) throws Exception {
-      Container container = new HelloWorld();
-      Connection connection = new SocketConnection(container);
-      SocketAddress address = new InetSocketAddress(8080);
+  public static void main(String[] list) throws Exception {
+    Container container = new HelloWorld();
+    Connection connection = new SocketConnection(container);
+    SocketAddress address = new InetSocketAddress(8080);
 
-      connection.connect(address);
-   }
+    connection.connect(address);
+  }
 }
