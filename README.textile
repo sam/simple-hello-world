@@ -10,6 +10,6 @@ bc. buildr run
 
 h2. Results
 
-I get about ~*2400* requests-per-second on my work laptop for this example using httperf as the benchmark tool and this command:
+I consistently get around *7,600* requests-per-second on my work laptop for this example using httperf as the benchmark tool and this command:
 
 bc. httperf --num-calls=20000 --server localhost --port=8080 --uri=/ --rate 20

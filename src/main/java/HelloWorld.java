@@ -24,7 +24,7 @@ public class HelloWorld implements Container {
       body.println("Hello World");
       body.close();
     } catch(java.io.IOException e) {}
-  } 
+  }
 
   public static void main(String[] list) throws Exception {
     Container container = new HelloWorld();
